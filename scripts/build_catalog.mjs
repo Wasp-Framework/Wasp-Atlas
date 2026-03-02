@@ -23,7 +23,6 @@ function assert(cond, msg) {
 }
 
 function safeSlugFromFolder(folderName) {
-  // enforce slug policy: lowercase letters/numbers/hyphens
   const ok = /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(folderName);
   assert(ok, `Invalid slug/folder name "${folderName}". Use lowercase letters/numbers/hyphens only.`);
   return folderName;
@@ -44,25 +43,21 @@ function buildSystemsIndex() {
     const sysDir = path.join(SYSTEMS_DIR, folder);
 
     const aggregationPath = path.join(sysDir, "aggregation.json");
-    const configPath = path.join(sysDir, "config.json");
-    const thumbPath = path.join(sysDir, "screenshots", "00_thumb.png");
     const metaPath = path.join(sysDir, "meta.json");
+    const thumbPath = path.join(sysDir, "screenshots", "00_thumb.png");
 
     // required files
     assert(exists(aggregationPath), `Missing ${path.relative(REPO_ROOT, aggregationPath)}`);
-    assert(exists(configPath), `Missing ${path.relative(REPO_ROOT, configPath)}`);
+    assert(exists(metaPath), `Missing ${path.relative(REPO_ROOT, metaPath)}`);
     assert(exists(thumbPath), `Missing ${path.relative(REPO_ROOT, thumbPath)} (required thumbnail)`);
 
-    // optional meta
-    let meta = {};
-    if (exists(metaPath)) {
-      meta = readJson(metaPath);
-    }
+    const meta = readJson(metaPath);
 
     const name = meta.name ?? slug;
     const description = meta.description ?? "";
     const tags = Array.isArray(meta.tags) ? meta.tags : [];
     const license = meta.license ?? "";
+    const author = meta.author ?? "";
 
     systems.push({
       slug,
@@ -70,9 +65,10 @@ function buildSystemsIndex() {
       description,
       tags,
       license,
+      author,
       thumbnail: `systems/${slug}/screenshots/00_thumb.png`,
-      aggregation: `systems/${slug}/aggregation.json`,
-      config: `systems/${slug}/config.json`
+      aggregation_url: `systems/${slug}/aggregation.json`,
+      meta_url: `systems/${slug}/meta.json`
     });
   }
 
@@ -104,9 +100,11 @@ function buildReadmeSection(systems) {
   for (const s of systems) {
     const tags = s.tags.length ? mdEscape(s.tags.join(", ")) : "";
     const desc = s.description ? ` — ${mdEscape(s.description)}` : "";
-    const name = `**${mdEscape(s.name)}**${desc}`;
+    const author = s.author ? `<br/><sub>by ${mdEscape(s.author)}</sub>` : "";
+    const name = `**${mdEscape(s.name)}**${desc}${author}`;
     const preview = `![](${s.thumbnail})`;
-    const files = `[aggregation](${s.aggregation}) · [config](${s.config})`;
+    const files = `[aggregation](${s.aggregation_url}) · [meta](${s.meta_url})`;
+
     lines.push(`| ${preview} | ${name} | ${tags} | ${files} |`);
   }
 
