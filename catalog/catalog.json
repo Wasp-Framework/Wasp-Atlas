@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-03-02T15:10:15.993Z",
+  "count": 3,
+  "systems": [
+    {
+      "slug": "brio-chamfer",
+      "name": "Brio Rails",
+      "description": "Brio rails aggregation with chamfered colliders. Created this example during the development of WaspJS.",
+      "tags": [
+        "construction toys",
+        "wood"
+      ],
+      "license": "",
+      "author": "Roger Winkler",
+      "thumbnail": "systems/brio-chamfer/screenshots/00_thumb.png",
+      "aggregation_url": "systems/brio-chamfer/aggregation.json",
+      "meta_url": "systems/brio-chamfer/meta.json"
+    },
+    {
+      "slug": "corner-shape",
+      "name": "Corner Shape",
+      "description": "Corner aggregation example.",
+      "tags": [
+        "examples",
+        "simple"
+      ],
+      "license": "",
+      "author": "Andrea Rossi",
+      "thumbnail": "systems/corner-shape/screenshots/00_thumb.png",
+      "aggregation_url": "systems/corner-shape/aggregation.json",
+      "meta_url": "systems/corner-shape/meta.json"
+    },
+    {
+      "slug": "stacked-sticks",
+      "name": "Stacked Sticks",
+      "description": "Stick aggregation example from WASP basic examples.",
+      "tags": [
+        "examples",
+        "simple"
+      ],
+      "license": "",
+      "author": "Andrea Rossi",
+      "thumbnail": "systems/stacked-sticks/screenshots/00_thumb.png",
+      "aggregation_url": "systems/stacked-sticks/aggregation.json",
+      "meta_url": "systems/stacked-sticks/meta.json"
+    }
+  ]
+}
