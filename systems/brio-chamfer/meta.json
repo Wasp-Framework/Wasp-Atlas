@@ -1,5 +1,5 @@
 {
-  "slug": "brio-chamfer"
+  "slug": "brio-chamfer",
   "name": "Brio Rails",
   "description": "Brio rails aggregation with chamfered colliders. Created this example during the development of WaspJS.",
   "tags": ["construction toys", "wood"],
