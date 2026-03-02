@@ -1,7 +1,7 @@
 {
-  "slug": "stacked-sticks",
-  "name": "Stacked Sticks",
-  "description": "Stick aggregation example from WASP basic examples.",
+  "slug": "corner-shape",
+  "name": "Corner Shape",
+  "description": "Corner aggregation example.",
   "tags": ["examples", "simple"],
   "author": "Andrea Rossi",
   "aggregation": "aggregation.json",
@@ -11,7 +11,6 @@
   "created": "2026-03-02",
   "thumbnail": "screenshots/00_thumb.png",
   "byPart": {
-    "BRANCH": "#39ff14",
-    "STICK": "#00e5ff"
+    "L": "#00e5ff"
   }
 }
