@@ -1,0 +1,59 @@
+{
+  "id": "sha256:8c90ea0e2024a2283ec8850cd63c79153b41fa2dd7b6ddc7e70adc2b5121278a",
+  "slug": "octahedra",
+  "title": "Octahedra",
+  "created_at": "2026-04-07T19:51:25.903Z",
+  "status": "pending",
+  "authors": [
+    {
+      "name": "Roger Winkler",
+      "affiliation": "TU Darmstadt"
+    }
+  ],
+  "license": {
+    "value": "MIT"
+  },
+  "description": {
+    "short": "Default example",
+    "long": "Default example"
+  },
+  "tags": [
+    "geometry",
+    "testing"
+  ],
+  "software": "v0.7...",
+  "units": "Millimeters",
+  "metrics": {
+    "parts_total": 1,
+    "rules_total": 6
+  },
+  "part_colors": {
+    "A": "#c6d147"
+  },
+  "assets": {
+    "screenshots": [
+      "https://drive.google.com/open?id=1x17ZCGNXuHcV0blTiag3wGZpDIhuQbB0"
+    ]
+  },
+  "source": {
+    "submission": "google-form",
+    "aggregation_file": "https://drive.google.com/file/d/1mzznnDXZm69b9u3rJhVWfjI_J4W5T6zh/view?usp=drivesdk"
+  },
+  "derived": {
+    "aggregation_top_level_keys": [
+      "rnd_seed",
+      "rules",
+      "aggregated_parts",
+      "mode",
+      "field",
+      "global_constraints",
+      "aggregated_parts_sequence",
+      "catalog",
+      "parts",
+      "name",
+      "coll_check",
+      "graph",
+      "object_type"
+    ]
+  }
+}
