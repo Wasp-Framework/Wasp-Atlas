@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-09T15:35:46.144Z",
+  "generated_at": "2026-04-09T17:00:36.334Z",
   "count": 4,
   "systems": [
     {
@@ -32,19 +32,14 @@
     },
     {
       "slug": "octahedra",
-      "name": "octahedra",
-      "description": {
-        "short": "Default example",
-        "long": "Default example"
-      },
+      "name": "Octahedra",
+      "description": "Default example",
       "tags": [
         "geometry",
         "testing"
       ],
-      "license": {
-        "value": "MIT"
-      },
-      "author": "",
+      "license": "MIT",
+      "author": "Roger Winkler",
       "thumbnail": "systems/octahedra/screenshots/00_thumb.png",
       "aggregation_url": "systems/octahedra/aggregation.json",
       "meta_url": "systems/octahedra/meta.json"
