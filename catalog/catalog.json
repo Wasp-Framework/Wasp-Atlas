@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-02T15:10:15.993Z",
-  "count": 3,
+  "generated_at": "2026-04-09T15:35:46.144Z",
+  "count": 4,
   "systems": [
     {
       "slug": "brio-chamfer",
@@ -29,6 +29,25 @@
       "thumbnail": "systems/corner-shape/screenshots/00_thumb.png",
       "aggregation_url": "systems/corner-shape/aggregation.json",
       "meta_url": "systems/corner-shape/meta.json"
+    },
+    {
+      "slug": "octahedra",
+      "name": "octahedra",
+      "description": {
+        "short": "Default example",
+        "long": "Default example"
+      },
+      "tags": [
+        "geometry",
+        "testing"
+      ],
+      "license": {
+        "value": "MIT"
+      },
+      "author": "",
+      "thumbnail": "systems/octahedra/screenshots/00_thumb.png",
+      "aggregation_url": "systems/octahedra/aggregation.json",
+      "meta_url": "systems/octahedra/meta.json"
     },
     {
       "slug": "stacked-sticks",
