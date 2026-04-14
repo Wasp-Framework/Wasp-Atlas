@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T14:27:06.799Z",
+  "generated_at": "2026-04-14T14:34:42.437Z",
   "count": 5,
   "systems": [
     {
@@ -32,16 +32,14 @@
     },
     {
       "slug": "gyrobifastigium",
-      "name": "gyrobifastigium",
-      "description": {
-        "short": "Space filling aggregation of Gyrobifastigium solids",
-        "long": ""
-      },
-      "tags": [],
-      "license": {
-        "value": "GPL-3.0"
-      },
-      "author": "",
+      "name": "Gyrobifastigium",
+      "description": "Space filling aggregation of Gyrobifastigium solids",
+      "tags": [
+        "geometry",
+        "platonic"
+      ],
+      "license": "MIT",
+      "author": "Andrea Rossi",
       "thumbnail": "systems/gyrobifastigium/screenshots/00_thumb.png",
       "aggregation_url": "systems/gyrobifastigium/aggregation.json",
       "meta_url": "systems/gyrobifastigium/meta.json"
