@@ -1,0 +1,56 @@
+{
+  "id": "sha256:39b4eb8473f84b2ac34e0417e110be7b44ade3ada811810efa4f2759bf5a4f7f",
+  "slug": "gyrobifastigium",
+  "title": "Gyrobifastigium",
+  "created_at": "2026-04-14T14:22:01.357Z",
+  "status": "pending",
+  "authors": [
+    {
+      "name": "Andrea Rossi",
+      "affiliation": "The Computational Hive"
+    }
+  ],
+  "license": {
+    "value": "GPL-3.0"
+  },
+  "description": {
+    "short": "Space filling aggregation of Gyrobifastigium solids",
+    "long": ""
+  },
+  "tags": [],
+  "software": "v0.7...",
+  "units": "Millimeters",
+  "metrics": {
+    "parts_total": 1,
+    "rules_total": 24
+  },
+  "part_colors": {
+    "GY": "#47d15e"
+  },
+  "assets": {
+    "screenshots": [
+      "https://drive.google.com/open?id=1Rv8xC77X6V9c3T7JfyEdSPyP9v6gPB6H"
+    ]
+  },
+  "source": {
+    "submission": "google-form",
+    "aggregation_file": "https://drive.google.com/file/d/1xll407KTLvBk-m0h6xvX-dIQiXXuN8FQ/view?usp=drivesdk"
+  },
+  "derived": {
+    "aggregation_top_level_keys": [
+      "field",
+      "name",
+      "parts",
+      "rnd_seed",
+      "catalog",
+      "graph",
+      "rules",
+      "include_aggr_geo",
+      "aggregated_parts_sequence",
+      "global_constraints",
+      "coll_check",
+      "mode",
+      "aggregated_parts"
+    ]
+  }
+}
