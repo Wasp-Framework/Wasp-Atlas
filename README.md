@@ -115,6 +115,22 @@ Collection of reusable Aggregation systems for the Wasp Framework
 <table>
   <tr>
     <td width="90">
+      <img src="systems/sommerville-tetrahedra-no-1-multiple-elements/00_thumb.png" width="72" />
+    </td>
+    <td>
+      <strong><a href="systems/sommerville-tetrahedra-no-1-multiple-elements">Sommerville Tetrahedra No. 1 - Multiple Elements</a></strong><br/>
+      <sub>by Lukas Allner, Daniela Krönerth, Naomi Neururer, Andrea Rossi</sub><br/>
+      <code>inventorics</code> <code>space filling</code> <code>solids</code><br/>
+      <a href="systems/sommerville-tetrahedra-no-1-multiple-elements/aggregation.json">aggregation.json</a> · <a href="systems/sommerville-tetrahedra-no-1-multiple-elements/meta.json">meta.json</a>
+    </td>
+  </tr>
+</table>
+      </td>
+      <td width="50%" valign="top">
+
+<table>
+  <tr>
+    <td width="90">
       <img src="systems/vertex-octahedra/00_thumb.png" width="72" />
     </td>
     <td>
@@ -125,9 +141,6 @@ Collection of reusable Aggregation systems for the Wasp Framework
     </td>
   </tr>
 </table>
-      </td>
-      <td width="50%" valign="top">
-&nbsp;
       </td>
     </tr>
   </tbody>
